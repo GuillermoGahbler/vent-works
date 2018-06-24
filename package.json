@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --config config/webpack.prod.js",
     "develop": "concurrently \"npm run devServer\"",
     "devServer": "webpack-dev-server --config config/webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"

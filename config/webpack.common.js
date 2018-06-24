@@ -10,7 +10,11 @@ module.exports = {
     new htmlWebPack({
       template: join(__dirname,"../src/index.html"),
       filename: "index.html",
-      inject: "body"
+      inject: "body",
+      minify:{
+        collapseWhitespace: true,
+        removeComments: true,
+      }
     })
   ],
   module:{
