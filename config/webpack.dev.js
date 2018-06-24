@@ -14,7 +14,7 @@ module.exports = merge(common, {
     open: true,
     port: 8080,
     proxy: {
-      "/": "http://localhost:3000"
+      "/api": "http://localhost:5000"
     }
   },
   plugins:[
